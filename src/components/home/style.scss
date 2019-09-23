@@ -1,0 +1,254 @@
+@import "../../common/scss/mixin";
+@import "../../common/scss/mobiscroll-2.13.min.css";
+@import "../../resources/css/calendar.css";
+
+.examfieldWrap {
+  color: #333;
+  height: 100%;
+  overflow: hidden;
+  .xd {
+    //z-index: 2;
+    //height: 15%;
+    //@include min-height(88);
+  }
+
+  .hide {
+    display: none;
+  }
+
+  .noData {
+    color: #999;
+    text-align: center;
+    @include margin-top(30);
+  }
+
+  .headerWrap {
+    position: relative;
+    @include padding(0, 16);
+    @include padding-top(15);
+    @include padding-bottom(13);
+    display: flex;
+    flex-wrap: nowrap;
+    .backWrap {
+      @include height(30);
+      width: 10%;
+      position: absolute;
+    }
+    .loading{
+      width:66%;
+      @include margin-top(120);
+    }
+    img {
+      display: flex;
+      margin: inherit;
+      @include width(21);
+      @include height(20);
+    }
+    .back-img{
+      @include width(21);
+      @include height(15);
+    }
+    p {
+      flex-grow: 1;
+      @include font-size(17);
+      text-align: center;
+    }
+    //img:last-child {
+    //  @include width(22);
+    //  @include height(22);
+    //}
+    border-bottom-width: 1px;
+    //@include border-bottom-width(1);
+    border-bottom-style: solid;
+    border-bottom-color: #eeeeee;
+  }
+
+  .searchWrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include padding(8, 0);
+    @include font-size(14);
+    border-bottom-width: 1px;;
+    //@include border-bottom-width(1);
+    border-bottom-style: solid;
+    border-bottom-color: #eeeeee;
+    div {
+      text-align: center;
+      flex-grow: 1;
+      vertical-align: middle;
+      img {
+        display: inline-block;
+        @include width(11);
+        @include height(5);
+        @include padding-left(5);
+        margin: 0;
+      }
+    }
+    .timeSel {
+      position: relative;
+      input {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        background-color: #f00;
+        width: 100%;
+      }
+    }
+    .dateWrap {
+      display: flex;
+      justify-content: center;
+      div {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+      }
+    }
+  }
+
+  .listWrap {
+    @include padding(0, 13, 73, 15);
+    height: 85%;
+    overflow: auto;
+    .listTab {
+      display: flex;
+      @include padding-top(19);
+      @include padding-bottom(19);
+      //border-bottom-width: 1px;
+      ////@include border-bottom-width(1);
+      //border-bottom-style: solid;
+      //border-bottom-color: #eeeeee;
+      div {
+        display: flex;
+        flex-direction: column;
+        p:first-child {
+          @include padding-bottom(15);
+        }
+      }
+      .listInfo {
+        flex-grow: 1;
+        p:first-child {
+          @include font-size(16);
+          font-weight: bold;
+          @include width(250);
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+        }
+        p:last-child {
+          color: #666;
+          @include font-size(12);
+          @include padding-left(16);
+          background: url("./images/address.png") no-repeat left center;
+          @include background-size(11, 13);
+          @include width(250);
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+        }
+      }
+      .listCount {
+        color: #666;
+        @include padding-left(20);
+        text-align: right;
+        p:first-child {
+          @include font-size(13);
+          color: #333;
+        }
+        p:last-child {
+          @include font-size(12);
+          color: #666666;
+        }
+      }
+    }
+  }
+
+  .mark {
+    position: fixed;
+    top: 16%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    background: rgba(0, 0, 0, .7);
+    div {
+      background-color: #ffffff;
+      @include padding(15);
+      @include font-size(14);
+      border-bottom-width: 1px;
+      //@include border-bottom-width(1);
+      border-bottom-style: solid;
+      border-bottom-color: #eeeeee;
+      &.active {
+        color: #1DACF9;
+        background: url('./images/checked.png') no-repeat 95% center #ffffff;
+        @include background-size(14, 10);
+      }
+    }
+  }
+
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    .listWrap {
+      height: 81%;
+    }
+    .mark {
+      top: 11.5%;
+    }
+  }
+
+  @media screen and (min-width: 375px) and (max-width: 812px) {
+    .mark {
+      top: 9%;
+    }
+  }
+
+  @media screen and (min-width: 414px) and (max-width: 736px) {
+    .mark {
+      top: 11%;
+    }
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+    .listWrap {
+      height: 80%;
+    }
+    .mark {
+      top: 13%;
+    }
+  }
+
+}
+
+.footer {
+  border-top: 1px dashed #eee;
+  display: flex;
+  @include padding(19);
+  //width: 100%;
+  div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    &:first-child {
+      flex-grow: 1;
+    }
+    &:last-child{
+      @include width(76);
+    }
+  }
+  p:first-child {
+    @include font-size(20);
+    @include margin-bottom(10);
+  }
+  p:last-child {
+    @include font-size(14);
+    color: #666;
+  }
+  img {
+    display: block;
+    @include width(76);
+    @include height(76);
+  }
+}
+

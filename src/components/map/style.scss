@@ -1,0 +1,45 @@
+@import "../../common/scss/mixin";
+
+.mapWrap {
+  overflow: hidden;
+  height: 100%;
+  .headerWrap {
+    position: relative;
+    @include padding(0, 16);
+    @include padding-top(35);
+    @include padding-bottom(13);
+    -webkit-box-align: center;
+    display: -webkit-box;
+    .backWrap {
+      @include height(30);
+      width: 10%;
+      position: absolute;
+    }
+    img {
+      display: -webkit-box;
+      margin: inherit;
+      @include width(21);
+      @include height(15);
+    }
+    //img:first-child {
+    //  @include width(21);
+    //  @include height(15);
+    //}
+    p {
+      -webkit-box-flex: 1;
+      @include font-size(17);
+      text-align: center;
+    }
+    //img:last-child {
+    //  @include width(22);
+    //  @include height(22);
+    //}
+    @include border-bottom-width(1);
+    border-bottom-style: solid;
+    border-bottom-color: #eeeeee;
+  }
+  .mapContent {
+    width: 100%;
+    @include height(900);
+  }
+}

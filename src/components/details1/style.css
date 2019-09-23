@@ -1,0 +1,161 @@
+.animate {
+  -webkit-transition:  all;
+  transition:  all;
+  -webkit-transition-duration:  0.3s;
+  transition-duration:  0.3s; }
+
+.detailsWrap {
+  color: #333; }
+  .detailsWrap .headerWrap {
+    position: relative;
+    background-color: #ffffff;
+    padding:  0rem 1.06667rem;
+    padding-top:  2.33333rem;
+    padding-bottom:  0.86667rem;
+    -webkit-box-align: center;
+    display: -webkit-box;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: #eeeeee; }
+    .detailsWrap .headerWrap .backWrap {
+      height:  2rem;
+      width: 10%;
+      position: absolute; }
+    .detailsWrap .headerWrap img {
+      display: -webkit-box;
+      margin: inherit;
+      width:  1.46667rem;
+      height:  1rem; }
+    .detailsWrap .headerWrap p {
+      -webkit-box-flex: 1;
+      font-size:  1.13333rem;
+      text-align: center; }
+  .detailsWrap .detailsTop {
+    background-color: #ffffff;
+    padding:  0rem 1.4rem 0rem 1rem; }
+    .detailsWrap .detailsTop .topTittle p {
+      padding-bottom:  0.66667rem;
+      font-size:  0.93333rem; }
+      .detailsWrap .detailsTop .topTittle p:first-child {
+        padding-top:  1.33333rem;
+        padding-bottom:  1rem;
+        font-size:  1.2rem;
+        font-weight: bold; }
+      .detailsWrap .detailsTop .topTittle p:last-child i {
+        margin-left:  1.33333rem; }
+    .detailsWrap .detailsTop .topTittle div {
+      font-size:  0.8rem; }
+      .detailsWrap .detailsTop .topTittle div .labelStyle {
+        display: inline-block;
+        width:  3.06667rem;
+        height:  1.2rem;
+        line-height:  1.33333rem;
+        margin-right:  0.66667rem;
+        -webkit-border-radius:  3.33333rem;
+        border-radius:  3.33333rem;
+        font-size:  0.66667rem;
+        color: #ffffff;
+        text-align: center;
+        background-image: linear-gradient(90deg, #00E0E5 10%, #0086FA 90%); }
+    .detailsWrap .detailsTop .topAddress {
+      padding-bottom:  1.33333rem;
+      display: -webkit-box; }
+      .detailsWrap .detailsTop .topAddress p:first-child {
+        -webkit-box-flex: 1;
+        font-size:  0.93333rem;
+        padding-left:  1.33333rem;
+        background: url("./images/address.png") no-repeat left center;
+        background-size:  0.73333rem 0.86667rem;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        color: #666; }
+      .detailsWrap .detailsTop .topAddress p:last-child {
+        font-size:  0.8rem; }
+  .detailsWrap .line {
+    width: 100%;
+    height:  0.66667rem;
+    background: #f4f4f4; }
+  .detailsWrap .detailsContent {
+    background: #ffffff;
+    height:  30.53333rem;
+    padding-left:  1rem;
+    padding-left:  1rem;
+    padding-top:  1.2rem; }
+    .detailsWrap .detailsContent .contentTile {
+      font-size:  1.2rem;
+      background: url("./images/file.png") no-repeat left top;
+      background-size:  1.13333rem 1.2rem;
+      padding-left:  1.86667rem;
+      padding-bottom:  1.33333rem; }
+    .detailsWrap .detailsContent .tableWrap {
+      width: 100%;
+      overflow: auto; }
+      .detailsWrap .detailsContent .tableWrap .theTable {
+        border-spacing: 0;
+        font-size:  1rem;
+        border-width: 1px;
+        margin-bottom:  1.06667rem;
+        border-color: #eeeeee;
+        border-style: solid; }
+        .detailsWrap .detailsContent .tableWrap .theTable thead th {
+          border-right-width: 1px;
+          border-right-color: #eeeeee;
+          border-right-style: solid;
+          border-bottom-width: 1px;
+          border-bottom-color: #eeeeee;
+          border-bottom-style: solid;
+          font-weight: normal;
+          font-size:  1rem;
+          padding:  0.66667rem 0rem; }
+          .detailsWrap .detailsContent .tableWrap .theTable thead th div {
+            width:  6rem; }
+            .detailsWrap .detailsContent .tableWrap .theTable thead th div p:last-child {
+              padding-top:  0.33333rem;
+              font-size:  0.8rem;
+              color: #999; }
+        .detailsWrap .detailsContent .tableWrap .theTable thead th:last-child, .detailsWrap .detailsContent .tableWrap .theTable .ht-div th {
+          border-right: none; }
+        .detailsWrap .detailsContent .tableWrap .theTable .headth {
+          padding: 0 !important; }
+          .detailsWrap .detailsContent .tableWrap .theTable .headth div {
+            width:  6.06667rem;
+            height:  4.26667rem; }
+        .detailsWrap .detailsContent .tableWrap .theTable .head-title {
+          border-right: solid 1px #e5e5e5;
+          background-color: white; }
+          .detailsWrap .detailsContent .tableWrap .theTable .head-title .ht-div {
+            background-image: url(images/xiexian.png);
+            background-size: 100% 100%; }
+            .detailsWrap .detailsContent .tableWrap .theTable .head-title .ht-div th {
+              font-size:  1rem;
+              font-weight: normal;
+              padding: 0;
+              border: none;
+              padding-left:  0.53333rem;
+              padding-top:  0.53333rem; }
+        .detailsWrap .detailsContent .tableWrap .theTable tbody td {
+          border-right-width: 1px;
+          border-right-color: #eeeeee;
+          border-right-style: solid;
+          border-bottom-width: 1px;
+          border-bottom-color: #eeeeee;
+          border-bottom-style: solid;
+          text-align: center;
+          font-size:  0.86667rem;
+          height:  4.26667rem; }
+          .detailsWrap .detailsContent .tableWrap .theTable tbody td div p:first-child {
+            font-size:  1rem;
+            margin-bottom:  0.33333rem; }
+          .detailsWrap .detailsContent .tableWrap .theTable tbody td div p:last-child {
+            font-size:  0.8rem;
+            color: #666666; }
+        .detailsWrap .detailsContent .tableWrap .theTable tbody tr td:last-child {
+          border-right: none; }
+        .detailsWrap .detailsContent .tableWrap .theTable tbody tr:nth-child(2) td {
+          border-bottom: none; }
+    .detailsWrap .detailsContent .tips {
+      color: #666;
+      font-size:  0.8rem; }
+
+/*# sourceMappingURL=style.css.map */
